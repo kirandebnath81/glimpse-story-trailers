@@ -1,0 +1,47 @@
+/* for title */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+
+/* for general text */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --btn-color: #6c63ff;
+  --btn-hover-color: #403ba8;
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --secondary-background-color: #f9f9f9;
+
+  --text-color: #000000;
+  --secondary-text-color: rgba(0, 0, 0, 0.6);
+
+  --active-genre-background-color: #000;
+  --active-genre-text-color: #ffff;
+
+  --hover-background-color: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --secondary-background-color: #161616;
+
+  --text-color: #ffffff;
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
+
+  --active-genre-background-color: #ffff;
+  --active-genre-text-color: #000;
+
+  --hover-background-color: #2e2e2e;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
