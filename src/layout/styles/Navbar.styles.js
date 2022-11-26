@@ -7,7 +7,7 @@ export const StyledNav = styled.nav`
   height: 75px;
   z-index: 10;
   background-color: var(--background-color);
-  padding: 0px 12px;
+  padding: 0px 10px;
   color: var(--text-color);
   display: flex;
   align-items: center;
@@ -16,15 +16,17 @@ export const StyledNav = styled.nav`
     height: 60px;
   }
 `;
+
 export const StyledProfile = styled.div`
   svg {
     font-size: 2rem;
     cursor: pointer;
-  }
+    @media screen and (min-width: 351px) and (max-width: 600px) {
+      font-size: 1.55rem;
+    }
 
-  @media screen and (max-width: 600px) {
-    svg {
-      font-size: 1.4rem;
+    @media screen and (max-width: 350px) {
+      font-size: 1.3rem;
     }
   }
 `;
@@ -72,7 +74,7 @@ export const BoxTwo = styled.div`
     }
 
     .nav__nav-items {
-      flex-basis: 32%;
+      flex-basis: 35%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -84,8 +86,9 @@ export const BoxTwo = styled.div`
         align-items: center;
       }
       .nav__login-btn {
-        font-size: 14px;
-        padding: 6px 11px;
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 4px;
       }
     }
   }
@@ -119,7 +122,7 @@ export const HeroLogo = styled.div`
     width: 30px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 351px) and (max-width: 600px) {
     flex: 1;
     font-size: 20px;
     letter-spacing: 0px;
@@ -129,6 +132,19 @@ export const HeroLogo = styled.div`
     }
     img {
       width: 26px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    flex: 1;
+    font-size: 17px;
+    letter-spacing: 0px;
+    margin-right: 0px;
+    span {
+      margin-left: 5px;
+    }
+    img {
+      width: 21px;
     }
   }
 `;

@@ -16,7 +16,7 @@ export const Container = styled.div`
   @media only screen and (max-width: 600px) {
     flex-basis: 100%;
     flex-direction: column;
-    padding: 100px 12px;
+    padding: 100px 10px;
   }
 `;
 
@@ -81,7 +81,7 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   .video__likes {
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: 1.2rem;
   }
 
   .video__btn {
@@ -92,11 +92,11 @@ export const ButtonsContainer = styled.div`
     cursor: pointer;
     svg {
       font-weight: bold;
-      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-size: 1.5rem;
       margin-right: 4px;
     }
     span {
-      font-size: clamp(14px, 1.2vw, 1rem);
+      font-size: 1rem;
       font-weight: 500;
       white-space: nowrap;
     }
@@ -114,9 +114,19 @@ export const ButtonsContainer = styled.div`
   @media only screen and (min-width: 351px) and (max-width: 600px) {
     margin-top: 30px;
     justify-content: flex-end;
-
+    .video__likes {
+      font-weight: 500;
+      font-size: 1rem;
+    }
     .video__btn {
       margin-left: 10px;
+
+      svg {
+        font-size: 1rem;
+      }
+      span {
+        font-size: 14px;
+      }
     }
   }
   @media only screen and (max-width: 350px) {
