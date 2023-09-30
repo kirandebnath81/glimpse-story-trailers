@@ -5,8 +5,8 @@ A video library website for movie trailers
 ## Install and Run Locally
 
 ```bash
-  git clone https://github.com/kirandebnath81/glimpse-story.git
-  cd glimpse-story
+  git clone https://github.com/kirandebnath81/glimpse-story-trailers.git
+  cd glimpse-story-trailers
   npm install
   npm run start
 ```
